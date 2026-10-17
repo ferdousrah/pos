@@ -1,0 +1,22 @@
+import { cn } from '@/lib/cn';
+
+export function Spinner({ className }: { className?: string }) {
+    return (
+        <svg className={cn('size-4 animate-spin', className)} viewBox="0 0 24 24" fill="none" aria-hidden>
+            <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="3" opacity="0.2" />
+            <path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+    );
+}
+
+export function PageLoader() {
+    return (
+        <div className="grid h-[60vh] place-items-center text-ink-3">
+            <Spinner className="size-5" />
+        </div>
+    );
+}
+
+export function Skeleton({ className }: { className?: string }) {
+    return <div className={cn('animate-pulse rounded bg-sunken', className)} />;
+}

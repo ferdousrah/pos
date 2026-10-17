@@ -1,0 +1,5 @@
+* text=auto
+
+# Shell scripts run inside Linux containers: never let Windows line endings into them.
+*.sh text eol=lf
+Dockerfile text eol=lf

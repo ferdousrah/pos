@@ -1,0 +1,31 @@
+# Rebuilt inside the image
+node_modules
+vendor
+public/build
+public/hot
+
+# Never ship local secrets or data
+.env
+.env.*
+!.env.example
+public/uploads
+storage/*.key
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/framework/testing/*
+# Generated locally with dev packages (pail, sail) that are not installed in production
+bootstrap/cache/*.php
+
+# Tooling and editor files
+.git
+.github
+.idea
+.vscode
+.fleet
+.zed
+tests
+*.log
+Thumbs.db
+.DS_Store
